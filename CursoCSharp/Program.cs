@@ -3,12 +3,13 @@ using System.Collections.Generic;
 
 using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturasDeControle;
+using CursoCSharp.ClassesEMetodos;
 
 namespace CursoCSharp {
     class Program {
         static void Main(string[] args) {
             var central = new CentralDeExercicios(new Dictionary<string, Action>() {
-                //Fundamentos
+                // Fundamentos
                 { "Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
                 {"Comentários - Fundamentos", Comentarios.Executar},
                 {"Variáveis e Constantes - Fundamentos", VariaveisEConstantes.Executar},
@@ -25,7 +26,7 @@ namespace CursoCSharp {
                 {"Operadores Unários - Fundamentos", OperadoresUnarios.Executar },
                 {"Operadore Ternário - Fundamentos", OperadorTernario.Executar },
                 
-                //Estruturas de Controle
+                // Estruturas de Controle
                 { "Estrutura If - Estruturas de Controle", EstruturaIf.Executar },
                 { "Estrutura If/Else - Estruturas de Controle", EstruturaIfElse.Executar },
                 { "Estrutura If/Else If - Estruturas de Controle", EstruturaIfElseIf.Executar },
@@ -36,6 +37,14 @@ namespace CursoCSharp {
                 { "Estrutura Foreach - Estruturas de Controle", EstruturaForEach.Executar },
                 { "Usando Break - Estruturas de Controle", UsandoBreak.Executar },
                 { "Usando Continue - Estruturas de Controle", UsandoContinue.Executar },
+                
+                // Classes e Métodos
+                { "Membros - Classes e Métodos", Membros.Executar },
+                { "Construtores - Classes e Métodos", Construtores.Executar },
+                { "Métodos com Retorno - Classes e Métodos", MetodosComRetorno.Executar },
+                { "Métodos Estáticos - Classes e Métodos", MetodosEstaticos.Executar },
+                { "Atributos Estáticos - Classes e Métodos", AtributosEstaticos.Executar },
+                { "Desafio Atributo - Classes e Métodos", DesafioAtributo.Executar },
             });
 
             central.SelecionarEExecutar();
